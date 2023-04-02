@@ -1,7 +1,7 @@
 <template>
   <button
     v-on="$listeners"
-    :class="[themeClasses[theme], sizeClasses[size], `rounded-lg text-lg py-5`]"
+    :class="[themeClasses[theme], sizeClasses[size], `rounded-lg text-lg `]"
   >
     {{ text }}
   </button>
@@ -28,13 +28,13 @@ export default {
       themeClasses: {
         black: "bg-black text-white-primary",
         white: "bg-white text-black",
-        transparent: "outline-white-primary text-white",
+        transparent: "border border-white-primary text-white-primary",
       },
       sizeClasses: {
-        sm: "px-4",
-        md: "px-6",
-        lg: "px-8",
-        xl: "px-12",
+        sm: "px-4 py-2",
+        md: "px-6 py-5",
+        lg: "px-8 py-5",
+        xl: "px-12 py-5",
       },
     };
   },
