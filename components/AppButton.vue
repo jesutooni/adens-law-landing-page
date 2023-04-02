@@ -32,9 +32,9 @@ export default {
       },
       sizeClasses: {
         sm: "px-4 py-2",
-        md: "px-6 py-5",
-        lg: "px-8 py-5",
-        xl: "px-12 py-5",
+        md: "px-6 py-4 md:py-5",
+        lg: "px-8 py-4 md:py-5",
+        xl: "px-12 py-4 md:py-5",
       },
     };
   },
