@@ -1,12 +1,21 @@
 <template>
-  <div>
-    <div class="text-5xl font-medium font-rubik">Hayes Studio</div>
-    <AppButton text="View all practice areas" theme="black" size="md" />
-  </div>
+  <main>
+    <Hero />
+    <About />
+    <PracticeAreas />
+    <Testimonials />
+    <HireUs />
+  </main>
 </template>
 
 <script>
+import Hero from "~/components/sections/Hero.vue";
+import About from "~/components/sections/About.vue";
+import PracticeAreas from "~/components/sections/PracticeAreas.vue";
+import Testimonials from "~/components/sections/Testimonials.vue";
+import HireUs from "~/components/sections/HireUs.vue";
 export default {
   name: "IndexPage",
+  components: { Hero, About, PracticeAreas, Testimonials, HireUs },
 };
 </script>
